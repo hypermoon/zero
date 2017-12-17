@@ -1,10 +1,69 @@
 <html>
+
 <head>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+ <h2 style="font-family:KaiTi"> 宇科淼测试页面 </h2>
+  <div style="text-align:right">
+  <img   src="images/header.jpg"  /> 
+  </div>
+
+
+ <script>
+   function menume(x)
+   {
+       var mm  = document.getElementById("truobi");
+           mm =document.getElementById("submenu");
+    }
+        function prompt()
+        {
+          // alert("bbb!");
+             var ele = document.getElementById("content");
+                // ele.innerHTML = "黑咖啡  <br/> <br/>&nbsp白咖啡<hr/>&nbsp&nbsp其他种类开发中!";
+                 ele.innerHTML = "<iframe src='business.html' width='800' height='500' > </iframe>";
+                
+         }
+ </script>
+
 </head>
-
-
+   <br/>
 <body>
-    Hadoop
-     Hive
+    <hr/>
+       <div id="home">
+         <a href="index.html">返回首页</a>   
+       </div>
+
+  <div id= "firstnav" style="font-family:KaiTi"  class= menu>
+      <ul class="node1">
+           <li id="bg"> <a href="bigdata.html"> 水文大数据</a></li> 
+           <li id="bs" class="tts">    <a id= truobi class="vivi" href="#"> 水文业务知识</a>
+                 <ul>
+                     <li><a href="#" OnClick=prompt() >coffee</a></li>
+                     <li><a href="#">black tea</a></li>
+                     <li><a href="#">cafe</a></li>
+                  </ul>
+           </li>
+         <li id="pl"> <a href="infoplatform.html"> 水文信息化平台</a></li>
+         <li id="us"> <a href="infoplatform.html"> 关于本站</a></li>
+         <li id="bb">  <a href="bbs.html"> 论坛</a></li>
+     </ul>
+  </div>
+  <br/>
+  <div id="secnav">
+      <div id="info">
+      <ul>
+          <li> <a href="subfolder/1.html">Hadoop</a></li>
+          <li> <a href="subfolder/2.html">Hive</a></li>
+          <li> <a href="subfolder/2.html">Memcache</a></li>
+          <li> ToDo...</li>
+      </ul>
+      </div>
+  </div>
+  <br/>
+  <br/>
+
+    <div class="cc" id="content"   style="font-family:KaiTi"> 
+        &nbsp&nbsp&nbsp 内容 
+        <br/>
+    </div>
 </body>
 </html>
