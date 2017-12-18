@@ -2,11 +2,12 @@
   *{margin:0;padding:0}
   ul li{list-style:none}
   a{text-decoration:none}
-  div#firstnav{height:50px;width:1200px;margin:0 0 0 220px;padding:0;border:1;background:#678; }
+  div#firstnav{height:50px;width:1200px;margin:0 0 0 240px;padding:0 ;border:1;background:#678; }
   div#secnav{width:200px; margin:0 0 0 6px; float:left; padding:0;border:0;
               background:transparent;
              }
   div#secnav{background:transparent url(../images/water/waterinfo2.png) 0 0 no-repeat;}
+  div#home{float:left;width:160px;height:40px; text-align:center; background: url(../images/water/home150.jpg) 0 -50px no-repeat;margin:5px 0 0 24px; padding:14px 0 0 1px; }
   div#secnav ul {
         width:200px;
 	display:block;

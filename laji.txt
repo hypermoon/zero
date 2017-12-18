@@ -1,8 +1,0 @@
-
-       <!-- <div id="home" style="text-align:left; background: url(images/water/waterinfo2.png) 0 0px;
-                       padding:1px 0 0 2px;"   >
-        </div>
-/*  div#home{text-align:left; background: url(images/water/waterinfo2.png) 0 0 no-repeat;
-                       padding:1px 0 0 2px; }
-*/
-        --> 
