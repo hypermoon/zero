@@ -1,17 +1,23 @@
+<!DOCTYPE html>
 <html>
-
 <head>
   <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <meta http-equiv="Page-Enter" Content="blendTrans(Duration=6)">
+  <Meta http-equiv="Page-Exit" Content="blendTrans(Duration=0.5)">
   <script>
+   function cls()
+  {
+    document.write("<p>my first javascript</p>");
+   }
    function menume(x)
    {
        var mm  = document.getElementById("truobi");
            mm =document.getElementById("submenu");
     }
   </script>
- <h2 style="font-family:KaiTi"> 宇科淼测试页面 </h2>
-  <div style="text-align:right">
-  <img   src="images/header.jpg"  /> 
+ <h2 style="font-family:KaiTi;font-size:1.2em;"> 宇科淼测试页面 </h2>
+  <div style="text-align:right;background:transparent;">
+      <img   src="images/header.jpg"  /> 
   </div>
  <style type="text/css">
  </style>
@@ -19,6 +25,8 @@
 
 
  <script>
+   var video = document.getElementById("v1");
+       video.playbackRate=0.3;
         function prompt()
         {
           // alert("bbb!");
@@ -32,6 +40,11 @@
 </head>
    <br/>
 <body>
+  <div id="vdo">  
+   <video autoplay muted loop style="width:100%;" id="v1">
+     <source src= "images/water/watershow.mp4">
+   </video>
+  </div>
     <hr/>
   <div id="home">
       <a href="index.html">返回首页</a>   
@@ -49,7 +62,7 @@
            </li>
          <li id="pl"> <a href="infoplatform.html"> 水文信息化平台</a></li>
          <li id="us"> <a href="infoplatform.html"> 关于本站</a></li>
-         <li id="bb">  <a href="bbs.html"> 论坛</a></li>
+         <li id="bb">  <a href="#" OnClick=cls()> 论坛</a></li>
      </ul>
   </div>
 </div>
@@ -74,5 +87,8 @@
         <br/>
         <iframe src="business.html" width="800" height="500"></iframe>
     </div>
+  <script>
+   document.write("<p>my test js</p>");
+  </script>
 </body>
 </html>
