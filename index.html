@@ -7,7 +7,7 @@
   <script>
    function cls()
   {
-    document.write("<p>my first javascript</p>");
+    document.write(location.pathname);
    }
    function menume(x)
    {
@@ -25,8 +25,18 @@
 
 
  <script>
-   var video = document.getElementById("v1");
-       video.playbackRate=0.3;
+ //  var video = document.getElementById("v1");
+ //      video.playbackRate=2.0;
+     
+        function goforward()
+     { 
+        window.history.forward()
+     } 
+        function goback()
+     {
+       window.history.back()
+      }
+      
         function prompt()
         {
           // alert("bbb!");
@@ -40,16 +50,19 @@
 </head>
    <br/>
 <body>
-  <div id="vdo">  
+ <!--  <div id="vdo">  
    <video autoplay muted loop style="width:100%;" id="v1">
      <source src= "images/water/watershow.mp4">
    </video>
   </div>
+  -->
     <hr/>
   <div id="home">
       <a href="index.html">返回首页</a>   
   </div>
 <div id="toutiao">
+  <input type="button" value="forward" onclick="goforward()">
+  <input type="button" value="back" onclick="goback()">
   <div id= "firstnav" style="font-family:KaiTi"  class= menu>
       <ul class="node1">
            <li id="bg"> <a href="bigdata.html"> 水文大数据</a></li> 
